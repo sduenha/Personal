@@ -1,0 +1,13 @@
+Conditional Statements:
+    if -> first boolean-expression is true execute this code -> first boolean-expression is false don't execute this code
+    else -> none boolean-expressions are true execute this code
+    else if -> secound boolean-expression is true execute this code
+    switch statement -> permits enumeration of discrete cases -> has to break in the end of each case or you will fall through each one
+    ternary operator -> if-else on the vertical -> int x = (expr) ? 5 : 6; -> if the expression is true x = 5, if is false x = 6
+
+    if:
+        Use boolena expressions to make decisions
+    switch:
+        Use discrete cases to maka decisions
+    ternary operator (?;):
+        Use to replace a very simple if-else, making our code fancy

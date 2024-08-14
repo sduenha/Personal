@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(-45deg, red, blue,orangered); */
+    /* background: linear-gradient(to top left, red 10%, green 10%, blue 80%); */
+    background: repeating-linear-gradient(to right bottom, orangered, blue 10%, green 20%);
+    /* background: radial-gradient(orangered 50%, blue, green); */
+}
+
+/* Podemos fazer ele ir para baixo, cima, esqueda e direita ou colocar graus */
+/* Também podemos escolher a quantidade de cada cor, me porcentagem */
+/* Podemos também repetir as cores para elas ficarem em um padrão repetindo */

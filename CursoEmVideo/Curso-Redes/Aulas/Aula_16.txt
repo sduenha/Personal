@@ -1,0 +1,19 @@
+<Como bloquear invasores no meu Wi-Fi>
+
+Endereço MAC ==> Endereço físico da placa de rede que você conecta, MAC não muda
+
+==> Passos para bloquear dispositivos na rede
+1° Desativar o Wi-Fi do computador e conectar ele ao roteador via cabo
+2° Entrar no "site" do roteador e entrar na parte de estatísticas
+3° Para descobrir qual aparelho é qual usar o app Fing, no celular
+4° Colocar o método de acesso para lista de bloqueados
+5° Copiar o endereço MAC do aparelho que você deseja bloquear
+6° Entrar em filtro de MAC, Controle de Acesso ou Segurança para encontrar a opção de desabilitar o acesso
+
+==> Passos para ter uma rede aberta é só deixar usar quem for permitido
+1° Colocar o roteador para ficar sem senha
+2° Entrar em controle de acesso, e mudar o método de acesso para lista de permitidos
+3° Colocar os dispositivos que podem entrar na rede dentro da lista
+--> Para conectar um novo dispositivo precisa pegar o endereço MAC dele, por meio das configurações Wi-Fi do celular, e adicionar o dispositivo na rede
+--> No Iphone, para pegar o endereço MAC, entrar em configurações - geral - sobre e o endere MAC vai estar lá
+--> Endereço MAC no computador, abrir central de Rede e compartilhamento, clicar na conexões e abrir detalhes

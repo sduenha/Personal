@@ -1,0 +1,12 @@
+Loops:
+    while (true) -> infinite loop
+    while (boolean-expression) -> repeat the code until the boolean-expression became false -> first check after do the code
+    do while(boolean-expression) -> repeat the code until the boolean-expression became false -> first do the code after check if repeat
+    for (int i = 0; i < 10; i++) -> repeat the code a specified number of times -> set the counter variable -> check the boolean-expression -> the counter variable is incremented -> check the boolean-expression
+
+    while:
+        Use when you want to repeat an unknown number of times
+    do-while:
+        Use when you want a loop to repeat an unknown number of times, but at least once
+    for:
+        Use when you want a loop to repeat a discrete number of times, thought you may know the number at the moment the program is compiled

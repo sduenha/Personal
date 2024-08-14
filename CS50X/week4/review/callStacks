@@ -1,0 +1,5 @@
+Call Stacks
+    -> The frames of the functions are arranged in a stack
+    -> The frame for the most recently called function is always on the top of the stack
+    -> When a new function is called, a new frame is pushed onto the top of the stack and becomes the active frame
+    -> When a function finishes its work, its frame is popped off of the stack, the active frame will become the one below the one that was active

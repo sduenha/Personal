@@ -1,0 +1,13 @@
+Binary Search
+    Idea -> divide and conquer, reducing the search area by half each time trying to find a target number
+    * -> The array must be sorted
+
+    Pseudocode -> Reapeat until the array is of size 0:
+                    - Calculate the middle point of the current array.
+                    - If the target is at the middle, stop.
+                    - Otherwise, if the target is less than what's at the middle, repeat, changing the end point to be justo to the left fo the middle.
+                    - Otherwise, if the target is greater than what's at the middle, repeat, changing the start point to be just to the right of the middle.
+
+    Worst-case scenario -> We have to divide a list of n elemnets in half repeatedly to find the target element, either because the target element will be found at the end of the last division or doesn't exist in the array at all. O(log n)
+
+    Best-case scenario -> The target element is at the midpoint of the full array, and so we can stop looking immediately after we start.    Ω(1)

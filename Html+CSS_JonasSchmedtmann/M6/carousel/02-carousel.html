@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Carousel Component</title>
+  </head>
+
+  <body>
+    <div class="carousel">
+      <img src="maria.jpg" alt="Maria de Almeida">
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, vitae possimus iure inventore doloremque enim nemo accusantium quo repellat."
+        </p><!--testimonial-text  -->
+
+        <p class="testimonial-author">
+          Maria de Almeida
+        </p><!--testimonial-author-->
+
+        <p class="testimonial-job">
+          Senior Product Manager at EDP Comercial
+        </p><!--testimonial-job-->
+      </blockquote><!--testimonial-->
+
+      <button class="btn btn-left">
+        <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </button><!--btn-->
+
+      <button class="btn btn-right">
+        <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+        </svg>
+      </button><!--btn-->
+
+      <div class="dots">
+        <button class="dot select">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div><!--dots-->
+    </div><!--carousel-->
+  </body>
+</html>

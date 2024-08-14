@@ -1,0 +1,18 @@
+Boolean Expressions:
+    used to compare values
+    evaluete true or false
+    in C every nonzero value is true
+    in C zero is false
+    
+    Logical Operators:
+        && -> and -> is true only if both operands are true
+        || -> or -> is true if at least one operator is true
+        ! -> inverts the value of its operand
+
+    Relational Operators:
+        < -> less than
+        <= -> less than or equal to
+        > -> greater than
+        >= -> greater than or equal to
+        == -> equality
+        != -> Inequality

@@ -1,0 +1,158 @@
+<!--Tela de login do Facebook-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+        <meta name="description" content="Tela de login do facebook"/>
+        <meta name="keywords" content="facebook,login"/>
+        <meta name="author" content="Samuel Duenha"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> 
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <title>Faceburg</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="center">
+                <div class="logo">
+                    <h2>Faceburg</h2>
+                </div><!--logo-->
+
+                <form method="POST" class="form-login">
+                    <div class="login">
+                        <p>Email ou telefone:</p>
+                        <input type="email"/>                
+                    </div><!--login-->
+
+                    <div class="senha-login">
+                        <p>Senha:</p>
+                        <input type="password"/>
+                        <a href="www.google.com" target="_blank">Esqueceu a senha</a>
+                    </div><!--senha-login-->
+
+                    <input type="submit" name="acao" value="Enviar"/>
+                    
+                </form><!--form-login-->
+                <div class="clear"></div>
+            </div><!--center-->
+        </header>
+
+        <main>
+            <div class="center">
+                <div class="texto-imagem">
+                    <!--<p>
+                        O Facebook ajuda você a se conectar e<br> 
+                        compartilhar com as pessoas que fazem parte<br> 
+                        da sua vida.
+                    </p>
+                </div>texto-imagem-->
+
+                <div class="imagem">
+                    <img src="../Imagens/Login-face.png">
+                </div><!--imagem-->
+                
+                <div class="abrir-conta">
+                    <h2>Abra uma conta</h2>
+                    <h3>É gratuito e sempre será.</h3>
+
+                    <form class="criar-conta">
+                        <div class="nome">
+                            <input placeholder="Nome" type="text">
+                        </div><!--nome-->
+
+                        <div class="sobrenome">
+                            <input placeholder="Sobrenome" type="text">
+                        </div><!--sobrenome-->
+
+                        <div class="email">
+                            <input placeholder="Email" type="email">
+                        </div><!--email-->
+
+                        <div class="senha-nova">
+                            <input placeholder="Senha" type="password">
+                        </div><!--senha-nova-->
+                        <div class="clear"></div>
+
+                        <div class="nascimento">
+                            <h2>Data de nascimento</h2>
+
+                            <div class="nascimento-select">
+
+                                <select name="nascimento-dia" class="nascimento-dia">
+                                    <?php
+                                        for($i = 1; $i <=31; $i++){
+                                    ?>
+                                    <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                    <?php } ?>
+                                </select><!--nascimento-dia-->
+
+                                <select name="nascimento-mes" class="nascimento-mes">
+                                    <option value="1">Janeiro</option>
+                                    <option value="2">Fevereiro</option>
+                                    <option value="3">Março</option>
+                                    <option value="4">Abril</option>
+                                    <option value="5">Maio</option>
+                                    <option value="6">Junho</option>
+                                    <option value="7">Julho</option>
+                                    <option value="8">Agosto</option>
+                                    <option value="9">Setembro</option>
+                                    <option value="10">Outubro</option>
+                                    <option value="11">Novembro</option>
+                                    <option value="12">Dezembro</option>
+                                </select><!--nascimento-mes-->
+
+                                <select name="nascimento-ano" class="nascimento-ano">
+                                    <?php
+                                            for($i = 1900; $i <=2020; $i++){
+                                        ?>
+                                        <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                        <?php } ?> 
+                                </select><!--nascimento-ano-->
+                            </div><!--nascimento-select-->
+                            <div class="clear"></div>
+                        </div><!--nascimento-->
+
+                        <div class="sexo">
+
+                            <div class="sexo-masculino">
+                                <input type="radio" name="sexo" value="masculino">
+                                <h2>Masculino</h2>
+                            </div><!--sexo-masculino-->
+
+                            <div class="sexo-feminino">
+                                <input type="radio" name="sexo" value="feminino">
+                                <h2>Feminino</h2>
+                            </div><!--sexo-feminino-->
+                            <div class="clear"></div>
+                        </div><!--sexo-->
+
+                        <div class="botao-novo">
+                            <input type="submit" name=acao value="Cadastre-se">
+                        </><!--botao-novo-->
+                    </form><!--criar-conta-->
+                </div><!--abrir-conta-->
+            </div><!--center-->
+        </main>
+
+        <footer>
+            <div class="linguas">
+                <div class="center">
+                    <a class="selected-lingua" href="#">Português (BR)</a>
+                    <a href="#">Português (BR)</a>
+                    <a href="#">Português (BR)</a>
+                    <a href="#">Português (BR)</a>
+                    <a href="#">Português (BR)</a>
+                    <a href="#">Português (BR)</a>
+                    <a href="#">Português (BR)</a>
+                    <a href="#">Português (BR)</a>
+                    <a href="#">Português (BR)</a>
+                    <a href="#">Português (BR)</a>
+                    <a href="#">Português (BR)</a>
+                </div><!--center-->
+            </div><!--linguas-->
+            <div class="clear"></div>
+        </footer>
+    </body>
+</html>

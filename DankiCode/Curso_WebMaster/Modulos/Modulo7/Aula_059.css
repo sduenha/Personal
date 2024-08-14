@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    /*flex-direction: row-reverse;*/
+    /* flex-direction: column; */
+}
+
+aside{
+    order: 2;
+    padding: 30px;
+    background: #cccccc;
+}
+
+article{
+    order: 1;
+    padding: 30px;
+    background: gray;
+}
+
+/* flex-direction: row-reverse; inverte o lado dos elementos, o que está na direita vai para esquerda e vise e versa*/
+/* O order é uma alternativa para o flex-direction. Ele tem a vantagem de poder escolher o número dos elementos */
+/* Pode colocar o flex-direction como column e com isso faz com que ele fica em duas colunas diferentes */
+/* Quando usa o align-items: center; ele automaticamente faz as contas e deixa tudo alinhado*/

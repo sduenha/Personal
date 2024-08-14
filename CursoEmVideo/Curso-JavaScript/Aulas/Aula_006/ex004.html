@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, ${nome}.O seu nome tem ${nome.length} letras.<br />`)
+        document.write(`O seu nome em maiúsculas é ${nome.toUpperCase()}.<br />`)
+        document.write(`O seu nome em minúsculas é ${nome.toLowerCase()}.`)
+        // writeln Escreve na linha de baixo
+        // Apenas write continua escrevendo na linha
+
+        // Para colocar casas decimais ou tirar em números:
+        // .toFixed(número de casas)
+        // Podemos trocar uma coias por outra com:
+        // .replace('', '')
+
+        // Para mostrar em forma de dinheiro temos:
+        // .toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    </script>
+</body>
+</html>

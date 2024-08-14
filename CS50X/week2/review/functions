@@ -1,0 +1,8 @@
+Functions:
+    what is -> is a black box with 1 or more inputs and 1 output
+    for what -> organization, simplification, reusability
+    declaration -> return-type name(argument-list); -> return-type -> type of the output -> argument-list -> inputs to the function
+    definitions -> make that function works when it is call
+    calls -> pass the arguments and assign its return value to a variable of the correct type
+    miscellany -> functions with no inputs must be declare as having a void argument list -> with no output works the same way
+    

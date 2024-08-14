@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+/*
+.sidebar{
+    width: 200px;
+    height: 100%;
+    float: left;
+    background-color: orangered;
+}
+
+.content{
+    width: calc(100% - 200px);
+    height: 100%;
+    float: left;
+    background-color: #cccccc;
+}
+*/
+
+.box{
+    width: 100vw; /*Viewport widht*/
+    height: 100vh; /*Viewport height*/
+    background-color: orangered;
+}

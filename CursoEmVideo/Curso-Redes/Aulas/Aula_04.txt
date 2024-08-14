@@ -1,0 +1,20 @@
+<Começo das Redes>
+-> Começa com o Sputnik
+-> Aumento dos investimentos em tecnologia
+-> 1° comunicação entre computadores, nos EUA, entre 4 máquinas, para proteção de dados
+-> Criado pelos militares junto com universidades
+-> A Arpanet foi a rede mais famosa, ela é do governo do EUA
+-> Criação de protocolos, regras e ações, para que a comunicação pudesse ocorrer
+-> 1° protocolo é o NCP, que tinha que parar toda a comunicação para realizar transmissões
+-> Foi criado um novo protocolo, TCP/IP, que ao invés de mandar todos os dados de uma vez ele manda fragmentos
+-> O novo protocolo resolve o problema de bloquear a comunicação durante uma transmissão
+-> TCP é o que fragmenta o dado e remonta ele no remetente, o IP é a localização para onde o dado deve ir
+-> TCP/IP é um modelo de 4 camandas
+-> DNS é como uma agenda eletrónica, formada por 13 servidores, com 200 cópias cada
+-> Quando uma pesquisa é feita um dos 13 servidores recebem ela e devolvem o IP do que foi requerido
+-> Com o crescimento das redes, a Arpanet não teve mais interesse em mandar em tudo, então foi criada a Internet
+-> Internet vem de rede intercumunicáveis
+<Indicaçõs de livros>
+    -> Trabalhando com Redes de Computadores
+    -> Informática conceitos básicos
+    -> Redes de Computadores, Tanenbaum

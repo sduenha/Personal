@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual o seu pais</title>
+</head>
+<body>
+    <p>Qual o seu país de origem? </p>
+    <input type="text" name="textpais" id="textpais">
+    <input type="button" value="Enviar" onclick="mostrar()">
+    <div id="res">
+    </div><!--res-->
+
+    <script>
+        function mostrar() {
+            var pais = document.querySelector('#textpais')
+            var pais_origem = pais.value
+
+            if (pais_origem == 'Brasil'){
+                res.innerHTML = 'Você é do Brasil!'
+            }else{
+                res.innerHTML = `Bem vindo estrangeiro! Você vem do ${pais_origem}`
+            }
+            console.log(pais_origem)
+        }
+
+    </script>
+</body>
+</html>

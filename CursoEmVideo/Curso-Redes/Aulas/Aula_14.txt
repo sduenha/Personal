@@ -1,0 +1,17 @@
+<Montando cabo UTP>
+Padrão T568A(ordem)
+    1° Verde e Branco
+    2° Verde
+    3° Laranja e Branco
+    4° Azul
+    5° Azul e Branco
+    6° Laranja
+    7° Marron e Branco
+    8° Marron
+
+1° Desencapar dois dedos de cabo
+2° Pentear os fio
+3° Torçer a base dos fios para deixar reto
+4° Segura a base e coloca na ordem
+5° Encaixar o conector no cabo
+==> Usar sempre o mesmo padrão dos dois lados do cabo

@@ -1,0 +1,19 @@
+<Endereçamento IP Parte 1>
+-> Serve para identificar os dispositivos dentro de uma rede, ninguém tem IP igual
+-> O cliente e o servidor recebem o IP
+-> O IP do servidor, em sua maioria, é fixo
+-> Cade IP é formado por 4 bytes, é mostrado em decimal, mas a máquina le em binário
+
+Classes IP
+-> Para descobrir a classe precisa ver os 3 primeiros números
+A -> 0 a 127 -> Pode ter 2^24 possibilidades de pessoas dentro da rede
+B -> 128 a 191 -> Pode ter 2^16 possibilidades de pessoas dentro da rede
+C -> 192 a 223 -> Pode ter 2^8 possibilidades de pessoas dentro da rede
+D -> 224 a 239 -> Separado para o Multicast
+E -> 240 a 255 -> Teste de novas tecnologias
+-> Essas classes servem para separa a quantidade de computadores em cada rede
+
+Unicast -> Manda mensagem para um só endereço(host)
+Multicast -> Manda para um grupo selecionado
+Anycast -> Manda para qualquer um mais próximo, dentro da rede
+Broadcast -> Manda para todos de uma rede, mas não são todos que leem, só para quem foi mandado que le

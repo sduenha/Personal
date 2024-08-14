@@ -1,0 +1,5 @@
+Hexadecimal
+    -> It is a base-16
+    -> Used to express the data on a computer's system
+    -> Always put "0x" before the hexadecimal number to be easyer to identify
+    -> Easy to convert to binary if you divided the number in groups of 4

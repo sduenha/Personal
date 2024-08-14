@@ -1,0 +1,17 @@
+Data Types from C:
+    int -> integers -> limit of 32 bits
+    char -> single characters -> limit of 8 bits
+    float -> numbers with decimal point -> limit of 32 bits
+    double -> numbers with decimal point -> limit of 64 bits
+    Type:
+    void -> placeholder for "nothing"
+
+Qualifiers from C:
+    unsigned -> can be applied to certain data types -> In the case of int discart any negative number
+    short 
+    long
+    const -> don't let you change the value of a variable
+
+Datas Types from the libery CS50:
+    bool -> boolean value -> just true of false
+    string -> series of characters

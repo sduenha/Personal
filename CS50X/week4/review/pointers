@@ -1,0 +1,24 @@
+Pointers
+    -> They are addresses for locations in memory where variables live
+    -> They are nothing more then addresses
+    => Is a data whose value is a memory address and that the type describes the data located at that memory address 
+    -> Alternative way to pass data between functions, that passes the real data, not a copy
+    -> Always set the value of a pointer to NULL if you don't set his value to something meaningful
+
+    Type of pointers
+        -> The NULL pointer
+        -> The one that extract the address of an already existing variable
+    
+    How to extract the address of an already existing variable?
+        -> Using the address extraction operator => &
+        -> x being an int-type variable, &x is a pointer-to-int whose value is the address of x
+        -> If "arr" is an array of doubles, then &arr[i] is a pointer-to-double whose value is the address of the i element of arr.
+            -> An array's name is just a pointer to its first element
+
+    Dereferencing the pointer -> modify or inspect the location of the pointer
+
+    *pc -> is the data that lives at the memory address stored inside the variable pc
+
+    The Dereference operator is the *
+
+    -> If you try to dereference a pointer whose value is NULL you will have a Segmentation fault

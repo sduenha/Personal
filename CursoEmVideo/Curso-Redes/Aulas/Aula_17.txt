@@ -1,0 +1,3 @@
+<Com usar o Cisco Packet Tracer>
+Você vai adicionar os dispositivos que você deseja para simular uma rede
+Modem  DSL -> O que o técnico leva

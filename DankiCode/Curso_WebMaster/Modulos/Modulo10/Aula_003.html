@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+        <meta name="author" content="Samuel Duenha"/>
+        <link href="" rel="stylesheet"/>
+        <title>Terceira aula de Js</title>
+    </head>
+
+    <body>
+        <script>
+            window.onload = function(){
+                // Quando a variavel é igual a [] significa que ela é do tipo array
+                // Array é um váriavel que pode ter vários valores que são definidos pelo número dentro dos []
+                // var nome = [];
+                // nome[0] = "Samuel"
+                // nome[100] = "João"
+
+                // console.log(nome[0], nome[100])
+
+                // Quando a váriavel é igual a {} significa que ela é um objeto
+                // Objeto pode ser vários valores e pode ser de qual quer tipo
+
+                var animal = {};
+                animal.nome = "Cachorro";
+                animal.peso = "24kg";
+                animal.idade = 23;
+                animal["idade"] = 24;
+
+                animal.nome[0] = "Guilherme";
+                animal.nome[1] = "Joao";
+
+                console.log(animal.nome[0])
+            }
+        </script>
+    </body>
+
+</html>

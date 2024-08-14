@@ -1,0 +1,4 @@
+Variables and Scopes:
+    local variables -> can only be accessed within the funcions in which they are created
+    global variables -> can be accessed by any function in the program
+    

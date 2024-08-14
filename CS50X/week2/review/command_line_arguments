@@ -1,0 +1,7 @@
+Command Line Arguments:
+    for what -> are used to get informations from the user without using input
+    how to use -> int main(int argc, string argv[])
+    argc -> argument count -> stores the number of command-line arguments the user typed whem te program was executed
+    argv -> argument vector -> an array that stores the text the user typed at the command-line 
+    first element of argv -> argv[0]
+    last element of argv -> argv[argc-1]

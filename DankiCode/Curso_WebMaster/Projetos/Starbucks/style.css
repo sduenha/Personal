@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+html, body{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header{
+    height: 200px;
+    padding: 20px 0;
+}
+
+.logo{
+    width: 50%;
+}
+
+.menu{
+    padding-top: 30px;
+    width: 50%;
+    text-align: right;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras{
+    position: absolute;
+    bottom: -750px;
+    right: -750px;
+    width: 1500px;
+    height: 1500px;
+    border-radius: 50%;
+    background-color: #017143;
+}
+
+.social-midia{
+    position: absolute;
+    left: 690px;
+    top: 300px;
+}
+
+.social-midia img{
+    height: 30px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.facebook{
+    margin-left: 10px;
+}
+
+.texto-sobre{
+    max-width: 660px;
+    margin-top: 50px;
+}
+
+.texto-sobre h1{
+    line-height: 100px;
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.texto-sobre span{
+    color: #017143;
+    font-weight: bold;
+}
+
+.texto-sobre p{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+input[type=button]{
+    margin-top: 20px;
+    width: 125px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #017143;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sabores{
+    position: absolute;
+    bottom: 10px;
+    right: 740px;
+}
+
+.sabores img{
+    height: 100px;
+    margin-right: 40px;
+}

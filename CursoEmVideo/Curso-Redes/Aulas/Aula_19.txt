@@ -1,0 +1,8 @@
+<Criando uma rede única usando WDS>
+-> O segundo roteador deve estar na mesma rede que o primeiro
+-> Para colocar na mesma rede precisa mudar o IP
+-> Colocar IP fixo no computador para que não deixe de funcionar e não perca a conexão
+-> Desativar o DHCP do segundo modem, para que ele parede de fornecer IPs
+-> Ativar o WDS e conectar o segundo modem no primeiro
+-> Pode deixar em qualquer modo de WDS
+-> A senha que ele pede é a do 1° modem

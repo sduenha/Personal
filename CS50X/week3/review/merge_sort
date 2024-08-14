@@ -1,0 +1,10 @@
+Merge Sort
+Idea -> sort smaller arrays and then combine those arrays together (merge them) in sorted order, using recursion.
+
+    Pseudocode -> Sort the left half of the array (assuming n > 1)
+                  Sort the right left of the array (assuming n > 1)
+                  Merg the two halves together
+
+    Worst-case scenario -> We have to split n elements up and then recombine them, effectively doubling the sorted subarrays as we build    them up. (combining sorted 1-element arrays into 2-element arrays, combining sorted 2-element arrays into 4-element arrays...). O(n log n)
+
+    Best-case scenario -> The array is already perfectly sorted. But we still have to split and recombine it back together with this algorithm. Ω (n log n).

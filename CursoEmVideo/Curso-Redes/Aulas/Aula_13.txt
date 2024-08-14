@@ -1,0 +1,14 @@
+<Cabos de rede e seus detalhes>
+MB => Mega Byte
+Mb => Mega Bit
+Mbps => Megabits por segundo
+Transceptor => Para fazer o conversão de mídia
+Cabo => É o todo
+Fio => É o que está dentro do Cabo, que transmite a informação
+
+Cabo Coaxial -> 10 Mbps, usado no topologia de barramento, usado para TV, ele é mais resistente
+Cabo Par Transado -> É transado para que o campo eletromagnético dos cabos se amplifiquem, os cabos recebem cargas opostas, e os outros pares dentro do fio são transados de maneiras diferentes para que o campo eletromagnético de cabos diferentes não se interfiram
+Para evitar interferência de outros campos eletromagnético no cabo, deve-se usar cabos blindados ou fazer uma blindagem física
+Fibra óptica -> A informação é transmitida por meio de luz
+    Mono modo -> Passa um feiche de luz por vez, é fina, precisa de um lazer de alta precisão
+    Multi modo -> Passa vários feiches de luz por vez

@@ -1,0 +1,38 @@
+<Cálculos de sub-redes>
+-> A vantagem de fazer uma sub-rede é que as máquinas ligadas na rede não conseguem se conectar
+-> Não existe endereço de rede ímpar e de broadcast par
+-> Só tem sub-rede se tem octeto misto e só pode ter 1 octeto misto (qualquer núemro != 255 ou 0)
+
+==> Para descobrir se é uma sub-rede ou um IP é preciso escrever o IP em binário, se conseguir separar um lado com apenas "1" e o outro com apenas "0" é uma máscara, caso contrário é um IP
+
+Cálculo
+1° -> Olhar a máscara e achar o octeto misto
+2° -> Determinar o salto, subtrair o octeto misto de 256
+3° -> Achar as sub-redes
+4° -> Achar os endereços de broadcast
+5° -> Achar todos os hosts
+
+            Rede            Host            Broadcast
+1° Rede  192.168.1.0      192.168.1.1       192.168.1.x-1
+                             ao
+                          192.168.1.x-2
+
+2° Rede 192.168.1.x       192.168.1.x+1     192.168.1.2x-1
+                                ao
+                          192.168.1.2x-2
+
+3° Rede 192.168.1.2x      192.168.1.2x+1    192.168.1.3x-1
+                                ao
+                          192.168.1.3x-2
+
+4° Rede 192.168.1.3x      192.168.1.3x+1    192.168.1.4x-1
+                                ao
+                          192.168.1.4x-2  
+
+5° Rede 192.168.1.4x
+
+Host sempre é (Rede + 1) até (Broadcast - 1)
+x = 1° sub-rede + salto
+4x-1 tem que ser 255
+A última rede sempre vai ser o octeto misto
+E a rede da tabela sempre vai ser 256, mas ela não é considerada uma rede, pois passa de 255

@@ -1,0 +1,3 @@
+<Tomadas de superfície>
+São úteis para que caso dê problema no cabo, nunca vai ser no cabo da parede, vai ser no cabo ligado na tomada e no computador
+-> O Conector tem que ter o mesmo padrão que o cabo 

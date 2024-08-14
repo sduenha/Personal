@@ -1,0 +1,4 @@
+Debugging Methods:
+    printf -> uses printf to print the value of some variable to try to discovery the problem
+    debugger -> uses the debugger to discovery the problem
+    rubber duck -> talk out loud to discovery the problem

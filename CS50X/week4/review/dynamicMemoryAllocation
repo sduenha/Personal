@@ -1,0 +1,14 @@
+Dynamic Memory Allocation
+    -> Use points to get access to a block of this memory at runtime
+    -> This memory comes from a pool of memory known as the "heap"
+    -> The memory that we were used to use were from the "stack" 
+
+    How to get this Dynamic-allocated memory
+        -> By making a call to the C standard library function malloc(), passing as its parameter the number of bytes requested
+        -> After obtaining memory for you (if it can), malloc() will return a pointer to that memory
+        -> If it can't give you memory it will hand you back NULL
+    
+    Important
+        -> This new type of memory do not return automatically to the system, what can result in a memory leak
+        -> After use the dynamically-allocated memory you must "free()" it
+        => Do not "free()" a block of memory more than once

@@ -1,0 +1,9 @@
+<Configurando roteador Wi-Fi>
+
+==> Essa é a configuração básica
+
+-> Abrir o cmd e escrever "ipconfig", encontrar o Adaptador Ethernet Ethernet e pegar o endereço Gateway padrão
+-> Abrir o IP no navegador e iniciar as configurações
+-> IP dinâmico é para ele poder mudar(utilizado em casa), IP Estático é o que não muda(utilizado em empresas)
+-> Clonar MAC serve para o roteador se passar pelo seu computador, utilizado para que só alguns roteadores possam acessar a rede
+-> Ocultar SSID serve para ocultar a sua rede, tendo que conectar o nome e a senha para se ligar a rede

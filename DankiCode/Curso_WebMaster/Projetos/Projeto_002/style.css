@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    max-width: 1280px;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+
+/* Começo estilização do header */
+header{
+    width: 100%;
+    background: #d6d6d6;
+}
+
+
+/* Estilizando o logo da esquerda */
+.logo1{
+    width: 200px;
+    float: left;
+    margin: 10px 10px;
+}
+
+/* Estilizando o logo da direita */
+.logo2{
+    width: 200px;
+    float: right;
+    margin: 20px 10px;
+}
+
+/* Deixando o header responsivo */
+@media screen and (max-width: 550px){
+
+    .logo1, .logo2{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Fim estilização do header */
+
+/* Começo da estilização do main */
+
+/* Estilizando a imagem de fundo */
+.img-fundo{
+    height: 750px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-image: url(imagens/Frente_hotel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Começo da estilização do fomulário */
+
+/* Estilizando a caixa do formulário */
+form{
+    width: 500px;
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 50px;
+    background: rgba(248, 245, 245, 0.8);
+}
+
+/* Estilizando a frase do form */
+.frase-form{
+    height: 100px;
+    text-align: left;
+    padding: 20px 20px;
+    background: rgb(200, 200, 200);
+}
+
+/* Estilizando os inputs */
+.nome-form,
+.email-form,
+.fone-form,
+.botao-form{
+    text-align: left;
+    font-size: 10px;
+    margin: 40px 30px;
+}
+
+/* Estilizando o texto dos inputs */
+.nome-form h2,
+.email-form h2,
+.fone-form h2{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    color: #817a7a;
+}
+
+/* Estilizando as caixas de texto */
+input[type=text],
+input[type=email]{
+    height: 45px;
+    width: 400px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Estilizando o botão do formulário */
+.botao-form{
+    text-align: center;
+}
+
+/* Estilizando o botão do form */
+.botao-form input[type=submit]{
+    height: 50px;
+    width: 300px;
+    border: none;
+    margin-top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #817a7a;
+    background: #26274f;
+}
+
+/* Estilizando campo obrigatório */
+.obrigatorio-form{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #817a7a;
+}
+
+/* Fazendo a @media do form  */
+
+
+/* Fim da estilizanção do form */
+
+/* Estilizando a img-seta */
+.img-seta{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin: -30px -30px;
+}
+
+/* Estilizando o container 1 */
+.container-1{
+    width: 90%;
+    padding: 70px 10px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #d6d6d6;
+}
+
+/* Estilizando o h2 do container 1 */
+.container-1 h2{
+    font-size: 50px;
+    font-weight: normal;
+}
+
+/* Estilizando o h3 do container 1 */
+.container-1 h3{
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: normal;
+}
+/* Fim da estilização do container 1 */
+
+/* Estilizando o container 2 */
+.container-2{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+/* Estilizando a frase do container 2 */
+.frase-container-2{
+    width: 40%;
+    background-color: rgba(166, 243, 255);
+}
+
+/* Estilizando o h3 do container 2 */
+.container-2 h2{ 
+    font-size: 30px;
+    font-weight: normal;
+    margin: 40px 20px;
+}
+
+/* Estilizando a imagem do container 2 */
+.img-container-2{
+    width: 60%;
+}
+
+/* Estilizando a imagem do container 2 */
+.img-container-2 img{
+    height: 250px;
+    width: 100%;
+}
+/* Fim da estilização do container 2 */
+
+/* Estilizando o container 3 */
+.container-3{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+/* Estilizando a frase do container 3 */
+.frase-container-3{
+    order: 2;
+    width: 40%;
+    background-color: rgba(166, 243, 255);
+}
+
+/* Estilizando o h2 do container 3 */
+.frase-container-3 h2{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 40px 20px;
+}
+
+/* Estilizando a imagem do container 3 */
+.img-container-3{
+    order: 1;
+    width: 60%;
+}
+
+/* Estilizando a imagem do container 3 */
+.img-container-3 img{
+    height: 250px;
+    width: 100%;
+}
+/* Fim da estilização do container 3 */
+
+/* Estilizando o container 4 */
+.container-4{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+/* Estilizando a frase do container 4 */
+.frase-container-4{
+    width: 40%;
+    background-color: rgba(166, 243, 255);
+}
+
+/* Estilizando o h2 do container 4 */
+.frase-container-4 h2{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+/* Estilizando o h3 do container 4 */
+.frase-container-4 h3{
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0 10px;
+    text-align: center;
+}
+
+/* Estilizando a imagem do container 4 */
+.img-container-4{
+    width: 60%;
+}
+
+/* Estilizando a imagem do container 4 */
+.img-container-4 img{
+    height: 250px;
+    width: 100%;
+}
+/* Fim da estilização do container 4 */
+
+/* Estilizando o container 5 */
+.container-5{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+/* Estilizando a frase do container 5 */
+.frase-container-5{
+    order: 2;
+    width: 40%;
+    background-color: rgba(166, 243, 255);
+}
+
+/* Estilizando o h2 do container 5 */
+.frase-container-5 h2{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+/* Estilizando o h3 do container 5 */
+.frase-container-5 h3{
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0 10px;
+    text-align: center;
+}
+
+/* Estilizando a imagem do container 5 */
+.img-container-5{
+    order: 1;
+    height: 250px;
+    width: 60%;
+}
+
+.img-container-5 img{
+    height: 250px;
+    width: 100%;
+}
+/* Fim da estilização do container 5 */
+
+/* Inicio da esilização do container 6 */
+.container-6{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    background: #d6d6d6;
+}
+
+/* Estilizando a frase do container 6 */
+.frase-container-6{
+    width: 100%;
+}
+
+/* Estilizando o h2 do container 6 */
+.frase-container-6 h2{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+/* Estilizando o h3 do container 6 */
+.frase-container-6 h3{
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: underline red;
+    color: red;
+    padding: 20px 10px;
+}
+/* Fim da estilização do container 6 */
+
+/* Inicio da estilização do footer */
+footer{
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Estilizando o h2 do footer */
+.endereço h2{
+    font-size: 20px;
+    font-weight: none;
+    text-align: center;
+    margin-top: 20px;
+    color: #817a7a;
+}
+
+/* Estilizando o h3 do footer */
+.endereço h3{
+    font-size: 20px;
+    font-weight: none;
+    text-align: center;
+    color: #817a7a;
+}
+
+/* Estilizando o logo do footer */
+.logo-footer{
+    text-align: center;
+    margin: 20px 0;
+}
+/* Fim da estilização do footer */
+
+/* Fazendo a @media dos containers */
+@media screen and (max-width: 870px){
+
+    /* Media do container 2 */
+    .frase-container-2 h2{
+        font-size: 25px;
+    }
+
+    /* Media do container 3 */
+    .frase-container-3 h2{
+        font-size: 25px;
+    }
+
+    /* Media do container 4 */
+    .frase-container-4 h2{
+        font-size: 25px;
+    }
+
+    /* Media do container 5 */
+    .frase-container-5 h2{
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+
+    /* Aplicando @media no form */
+    form{
+        width: 350px;
+        float: none;
+        position: relative;
+        left: 1px;
+        margin: 0 auto;
+    }
+        
+    input[type=text],
+    input[type=email]{
+        width: 300px;
+    }
+
+    /* Aplicando o @media nos containers*/
+    .container-2,
+    .container-3,
+    .container-4,
+    .container-5{
+        display: block;
+    }
+    
+    /* Aplicando a @media nas frases dos containers */
+    .frase-container-2,
+    .frase-container-3,
+    .frase-container-4,
+    .frase-container-5{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    
+    /* Aplicando @media nas imagens dos containers */
+    .img-container-2,
+    .img-container-3,
+    .img-container-4,
+    .img-container-5{
+        width: 100%;
+        margin-top: 3px;
+    }
+/* Fim da aplicaçõa */
+}

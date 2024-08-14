@@ -1,0 +1,4 @@
+<Cisco Packet Tracer>
+-> O IP do servidor tem que ser estático, caso contrário, não é possível acessa-lo, pois ficaria mudando de endereço
+Servidor DHCP -> Distribui IP, configurações, máscara, GetWay
+Tecnologia NAT -> Presente no modem, ele transforma o IP interno em um IP externo, fazendo com que o servidor consiga se conectar com o seu computador

@@ -1,0 +1,10 @@
+# Dissercando variavel
+a = input('Digite algo:')
+print('O tipo primitivo desse valor é {}'.format(a), type(a))
+print('Só tem espaços? {}'.format(a.isspace()))
+print('É um número? {}'.format(a.isnumeric()))
+print('É alfabético? {}'.format(a.isalpha()))
+print('É alfanumérico? {}'.format(a.isalnum()))
+print('Está somente em maiúsculas? {}'.format(a.isupper()))
+print('Está somente em minúsculas? {}'.format(a.islower()))
+print('Está capitalizada? {}'.format(a.istitle()))

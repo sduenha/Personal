@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 100%;
+    padding: 30px 5px;
+    background-color: #cccccc;
+    position: relative;
+}
+
+.box p{
+    word-wrap: break-word;
+    text-align: justify;
+    margin: 0 20px;
+    color: orangered;
+}
+
+/* white-space no modo normal quebra a linha na hora certa. */
+/*Mas essa propriedade com o nowrap ele nunca irá quebrar a linha */
+/* E essa propriedade com o pre ele irá interpretar todos os espaços e quebras de linhas que foram escritos */
+/* E com o pre-line ele considera apenas as quebras de linhas */
+/* Word-wrap no modo normal só quebra as linhas não quebra palavras. */
+/* Word-wrap: break-word; quebra as palavra para caberem dentro de onde ele está.*/
+/* Word-brake tem o mesmo resultado do word-wrap */

@@ -1,0 +1,9 @@
+To Creat:
+    specify the data type and give it a name
+
+To Creat Multiple Variables:
+    specify the data type and separate they with coma
+
+int number; -> declaration
+number = 17 -> assignment
+int number = 17 -> initialization

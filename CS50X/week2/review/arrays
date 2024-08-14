@@ -1,0 +1,8 @@
+Arrays:
+    what is -> are data structure
+    uses -> uses for hold values of the same type at contiguous memory locations
+    first element of an array -> position 0
+    last element of an array -> postion -1
+    array declaration -> type name[size]; -> size is how many elements you would like your array to contain
+    declaring and initializing an array simultaneously -> int array[4] = { true, false, true, false};
+    functions receive the actual array not a copy of it

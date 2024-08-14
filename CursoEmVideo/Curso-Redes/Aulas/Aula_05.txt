@@ -1,0 +1,12 @@
+<Classificação de Servidores>
+Servidor -> Disponibiliza recursos e servisos para a rede
+CDN -> Rede de distrubuição de conteúdo(Pega os conteúdos de Servidores e disponibiliza em um computador mais próximo ao cliente)
+
+1° Classificando Servidores
+    -> Servidor de arquivos == Guardar dados, de qualquer tipo
+    -> Servidor de aplicação == Disponibiliza aplicações
+    -> Servidor de impressão == Gerenciamento de impressões
+    -> Servidor Web == Guarda arquivos Web
+    -> Servidor de Comunicação == Faz a comunicação entre computadores de uma rede
+    -> Servidor de Banco de Dados == Fornece dados ao cliente
+    -> Servidor de Internet == Gerencia as conexões dos usuários da Internet

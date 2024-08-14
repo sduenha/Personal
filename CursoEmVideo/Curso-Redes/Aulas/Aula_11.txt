@@ -1,0 +1,9 @@
+<Configuração avançada de Wi-Fi>
+-> Entrar no IP do roteador
+-> Entrar na parte Configuração Wireless
+==> Nunca escolher a segurança "WEP"
+-> Se quiser criar um servidor utilizar o WPA/WPA2-Empresarial
+-> "Criptografia" deve estar no automático, assim como a "Versão" e a "Largura do Canal"
+-> Utilizar o modo "802.11n" se quiser mais performance, se quiser mais compatibilidade utilizar o misto
+-> Mudar "Canal" para um que esteja com o menor número de roteadores ligado(Utilizar o programa Xirrus)
+-> O rotiador deve ficar longe de metais

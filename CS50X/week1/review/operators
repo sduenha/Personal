@@ -1,0 +1,18 @@
+Arithmetic Operators:
+    + -> add
+    - -> subtract
+    * -> multiply
+    / -> divide
+
+Modulus operator:
+    % -> gives the remainder of a division
+
+Shorthands to apply Arithmetic Operators to a variable:
+    +=
+    -=
+    *=
+    /=
+
+Incrementing or decrementing a variable by 1:
+    ++
+    --

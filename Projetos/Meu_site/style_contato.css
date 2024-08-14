@@ -1,0 +1,43 @@
+.container {
+    width: 50vw;
+    display: grid;
+    margin-top: 10rem;
+    gap: 5rem;
+    background-color: #343032;
+    padding: 5rem;
+    box-shadow: rgba(196, 111, 0, 0.4) 5px 5px, rgba(196, 111, 0, 0.3) 10px 10px, rgba(196, 111, 0, 0.2) 15px 15px, rgba(196, 111, 0, 0.1) 20px 20px, rgba(196, 111, 0, 0.05) 25px 25px;
+}
+
+h1 {
+    justify-self: center;
+}
+
+textarea {
+    resize: none;
+    height: 10rem;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #F48C06;
+}
+
+.btn-primary:hover {
+    background-color: #C46F00;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 100vw;
+        margin-top: 0;
+        gap: 1rem;
+        padding: 1rem;
+        box-shadow: none;
+    }
+}

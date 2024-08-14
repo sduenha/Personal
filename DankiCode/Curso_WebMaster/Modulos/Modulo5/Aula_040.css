@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.box{
+    width: 33.3%;
+    height: 30%;
+    float: left;
+    border: 1px solid black;
+    background-color: orangered;
+}
+
+/*
+A altura tem que ter duas vezes a largura.
+@media screen and (max-aspect-ratio: 2/1){
+    .box{
+        width: 100%;
+    }
+}
+/* 
+x px de width ou y px de altura 
+
+@media screen and (max-width: Xpx) , screen and (max-height: Ypx){
+    .box{
+        width:100%
+    }
+}
+*/
+
+/*
+X px de width e  Y px de altura
+@media screen and (max-width: Xpx) and (max-height: Ypx){
+    .box{
+        width:100%;
+    }
+}
+*/

@@ -1,0 +1,64 @@
+.hobbies {
+    display: grid;
+}
+
+.read, .programing, .instrument, .gaming {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+img {
+    max-width: 800px;
+    height: 100%;
+}
+
+.programing, .gaming {
+    flex-direction: row-reverse;
+    background: #343032;
+}
+
+.read, .instrument {
+    background: #C46F00;
+}
+
+@media (max-width: 1024px) {
+    img {
+        max-width: 40vw;
+    }
+}
+
+@media (max-width: 425px) {
+    img {
+        display: none;
+    }
+
+    .read {
+        background-image: url("img/books.jpg");
+    }
+
+    .programing {
+        background-image: url("img/programing.png");
+    }
+
+    .instrument {
+        background-image: url("img/drums_guitar.png");
+    }
+
+    .gaming {
+        background-image: url("img/gaming.png");
+    }
+
+    h3, p {
+        background-color: rgba(150, 150, 150, 0.8);
+        color: black;
+    }
+}

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Parte 1 da aula
+.box{
+    height: 500px;
+    width: 500px;
+    margin: 100px auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: orangered;
+}
+*/
+
+/* Parte 2 da aula */
+.transform{
+    height: 400px;
+    max-width: 400px;
+    width: 100%;
+    border: 5px solid #cccccc;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: animacao;
+    animation-duration: 2s;
+}
+
+/*
+.transform:hover{
+    transform: translate(-50%,-50%) rotate(-360deg) scale(1.5);
+}
+*/
+
+@keyframes animacao{
+    0%{
+        transform: translate(-50%,-50%) rotateY(0deg);
+    }
+
+    50%{
+        transform: translate(-50%,-50%) rotateY(180deg)
+    }
+
+    100%{
+        transform: translate(-50%,-50%) rotateY(0deg);
+    }
+}

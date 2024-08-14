@@ -1,0 +1,22 @@
+Command Line For Linux:
+    ls -> list -> list the contents of the current directory
+    cd <directory you want to go> -> change directory -> . is the shorthand for the current directory -> .. is the shorthand for the parent of the current directory
+    pwd -> present working directory -> tells you the name of the current directory
+    Ctrl + l -> clear terminal
+    mkdir <name of the directory you want to create> -> make directory -> create a new subdirectory located in the current directory
+    cp <source> <destination> -> copy -> create a duplicate of the file you specify as source on the destination you specify
+    cp -r <source directory> <destination directory> -> copy recursive -> copy the whole directory to your destination
+    rm <file> -> remove -> delete the <file> -> asks a confirmation
+    rm -f <file> -> remove forcibly -> skip the confirmation
+    rm -r <directory> -> remove recursive -> delete the whole <directory>
+    rm -rf <directory> -> remove recursive and forcibly -> delete the whole <directory> whithout confirmation
+    mv <source> <destination> -> move -> rename a file, moving it from <source> to <destination>
+    chmod ->
+    rmdir ->
+    sudo ->
+    ln ->
+    man ->
+    clear ->
+    touch ->
+    diff ->
+    telnet ->

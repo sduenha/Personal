@@ -1,0 +1,3 @@
+<Problemas>
+-> Aparelhos com campo magnético muito forte podem interferir no Wi-Fi
+-> Caso algo está fornecendo um sinal Wi-Fi muito forte a conexão entre os modens pode dar problema

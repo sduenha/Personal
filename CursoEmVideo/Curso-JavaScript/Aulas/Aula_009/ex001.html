@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Apendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        // Podemos selecionar os elementos de 5 diferentes jeitos:
+            // Por marca:
+                // "getElementsByTagName()" 
+                // Pode pegar mais de 1 elemento
+                // Usa as marcas p, h1, div, body, etc
+                var p1 = window.document.getElementsByTagName('p')[0]
+                // Os colchetes depois do paragrafo serve para indicar qual elento que você quer pegar.
+                window.document.write('Está escrito assim: ' + p1.innerText)
+                p1.style.color = 'blue'
+                // innerText é o que está dento do elemento
+            // Por ID 
+                // getElementById()
+                var msg = window.document.getElementById('msg')
+                msg.style.background = "blue"
+                // msg.innerText = 'Estou aguardando...'
+            // Por Nome 
+                // getElementsByName()[]
+            // Por classe 
+                // getElementsByClassName()
+            // Por seletor 
+                // var d = window.document.querySelector('div#msg')
+                // d.style.color = 'Orange'
+    </script>
+</body>
+</html>

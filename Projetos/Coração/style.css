@@ -1,0 +1,58 @@
+body {
+    display: block;
+    background-color: rgba(20, 20, 20, 0.85);
+    text-align: center;
+}
+
+.esquerda, .direita {
+    position: absolute;
+    top: 175px;
+    left: 750px;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 100%;
+    /* animation-name: example-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate; */
+}
+
+.direita {
+    left: 900px;
+    animation: chegada-direita 0.9s 1;
+    animation-delay: 2s;
+}
+
+.esquerda {
+    animation: chegada-esquerda 0.9s 1;
+    animation-delay: 2s;
+}
+
+.baixo {
+    transform: rotate(45deg);
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 250px;
+    left: 825px;
+    animation: chegada-baixo 0.9s 1;
+    animation-delay: 2s;
+}
+
+@keyframes chegada-baixo {
+    from {top: 0}
+    to {top: 250px}
+}
+
+@keyframes chegada-direita {
+    from {left: 0;}
+    to {left: 900px;}
+}
+
+@keyframes chegada-esquerda {
+    from {left: 0}
+    to {left: 750px}
+}

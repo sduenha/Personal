@@ -1,0 +1,15 @@
+File Pointers
+    -> It is the ability to read data from and write data files is the primary means of storing persistent data, data taht does not disappear when your program stops running
+    -> The abstraction of files that C provides ir implemented in a data structure known as a "FILE"
+        -> Almost universally when working with files, we will be ussing pointers to them "FILE*"
+    -> All the file manipulation functions live in stdio.
+        -> All of them accept FILE* as one of their parameters, except for the function fopen(), which is used to get a file pointer in the first place
+    -> Some of the most common file input/output fuctions are "fopen(), fclose(), fgetc(), fputc(), fread(), fwrite()"
+
+    Functions to use
+        => fopen() -> Opens a file and returns a file pointer to it (FILE* ptr = fopen(<filename>, <operation>);)
+        => fclose() -> Closes a file pointed to by the given file pointer (fclose(<file pointer>);)
+        => fgetc() -> Reads and returns the next character from the file pointed to (char ch = fgetc(<file pointer>);)
+        => fputc() -> Writes or appends the specified character to the pointed-to file (fputc(<character>, <file pointer>);)
+        => fread() -> Reads <qty> units of size <size> from the file pointed to and stores them in the memory in a buffer pointed to by <buffer> (fread(<buffer>, <size>, <qty>, <file pointer>);)
+        => fwrite() -> Writes <qty> units of size <size> to the file pointed to by reading them from a buffer pointed to by <buffer>   (fwrite(<buffer>, <size>, <qty>, <file pointer>);)

@@ -1,0 +1,14 @@
+<Primeiros passos com roteador Wi-Fi>
+
+-> Desligar o Wi-Fi do notebook, para conectar apenas com o cabo
+-> Deixar o roteador desligado da Internet, conectado apenas no computador
+==> Para testar se a falta de Internet é problema no computador ou no roteador
+    -> Abrir o cmd, usar o comando "ping" seguido pelo nome de um site para testar, se todos os pacotes enviados forem recebidos a Internet está funcionando
+==> Teste para ver se o problema é na placa de rede
+    -> Abrir o cmd, usar o comando "ping" seguido pelo IP da própria máquina, se todos os pacotes enviado forem recebidos, está tudo certo
+==> O comando "tracert" seguido pelo nome de um site é utilizado para mostrar qual a rota feita da sua máquina até o servidor
+
+==> O comando "ipconfig" serve para ver o o IP das máquinas conectadas no roteador
+    -> Se aparecer "169" no endereço de IP, quer dizer que o roteador está com problema
+
+==> O comando "ipconfig /all" mostra todas as configurações do dispositivo

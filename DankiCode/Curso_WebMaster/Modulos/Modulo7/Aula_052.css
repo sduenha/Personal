@@ -1,0 +1,75 @@
+/* Para funcionar no Safari precisa colocar "-webkit- antes da tag" */
+/* "transition-property" pode colocar o que vai ser animado, com por exemplo a width */
+/* "transition-duration" coloca a duração da transição */
+/* "transition-delay" tem um delay até começar a animação */
+/* Tem vário tipos de transition */
+/* Começa com "transition-timing-function" */
+/* "ease" essa é a default, que faz com que ele tenha um começo devagar, um meio rápido e um fim devagar */
+/* "linear" Tem a mesma velocidade do começo ao fim */
+/* "ease-in" Fica com um começo lento */
+/* "ease-out" Fica com um final lento*/
+/* "ease-in-out" Fica com um começo e fim lento */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease-in;
+    background-color: orangered;
+}
+
+.box:hover{
+    width: 100%;
+}
+
+.box2{
+    height: 200px;
+    width: 200px;
+    -webkit-transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease-out;
+    background-color: orangered;
+}
+
+.box2.box2:hover{
+    width: 100%;
+}
+
+.box3{
+    height: 200px;
+    width: 200px;
+    background-color: orangered;
+    /*
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    delay: 2s;
+    */
+    transition: width 2s ease-in-out 2s;
+}
+
+.box3:hover{
+    width: 100%;
+}
+
+form input{
+    height: 20px;
+    width: 200px;
+    transition: 0.5s;
+    border: 1px solid orangered;
+}
+
+form input:focus{
+    width: 298px;
+}

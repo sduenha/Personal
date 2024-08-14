@@ -1,0 +1,32 @@
+<Endereçamento IP Parte 2>
+
+** Rede -> Lugar onde estão os dispositivos
+** Host -> Dispositivos dentro da rede
+
+IPS restritos e Privados
+
+-> 10.0.0.0 / 8 => Restrito e privado
+-> 172.16.0.0 / 12 => Restrito e privado
+-> 192.168.0.0 / 16 => Restrito e privado
+
+-> 127.0.0.0 => Restrito, e é a própria máquina
+-> 169.254.0.0 => APIPA, é o IP utilizado quando um computador não consegue encontrar um IP
+-> 0.0.0.0 => É o IP de inicialização, toda máquina quando ligada usa esse IP
+
+A rede é definida de diferentes formas dependendo da classa
+Classe A => A rede é o primeiro octeto
+Classe B => A rede são os dois primeiros octetos
+Classe C => A rede são os três primeiros octetos
+-> Portanto, para colocar dispositivos na mesma rede é preciso é a rede definida seja a mesma
+-> Num IP classe C para manter todos os dispositivos na mesma rede só é possível mudar o último octeto
+
+Quais números podem ser utilizados para o IP
+-> Toda rede tem o endereço de rede, host e broadcast
+        Rede            Host            Broadcast
+      Condomínio     Apartamento         Portaria
+     192.168.1.0     192.168.1.1       192.168.1.255
+                         até
+                    192.168.1.254
+
+-> Nunca se pode usar os números da rede, pois eles indicam onde o dispositivo se encontra
+-> Nunca se pode usar os números do broadcast, pois eles indicam o número para falar com todos

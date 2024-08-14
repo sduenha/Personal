@@ -1,0 +1,8 @@
+Custom Types
+    -> Used as "typedef"
+    -> It is a way to create a shorthand or rewritten name for data types
+    
+    How to use
+        -> Fist define a type in the normal way
+        -> Then alias it to something else
+        -> "typedef <old name> <new name>;"

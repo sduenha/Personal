@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.center{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/*Começa a estilização do header*/
+
+header{
+    padding: 8px 0;
+    background-color: #3665af;
+}
+
+/*Estilizando o logo*/
+.logo{
+    font-size: 30px;
+    float: left;
+    color: white;
+}
+
+/*Colocando os campos para preencher e as palavras para o direita*/
+.form-login{
+    float: right;
+}
+
+/*Estilizando as palvras em cima dos campos para preencher*/
+.login, .senha-login{
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+/*Estilizando a senha, coloquei position relative por conta do link que vem em baixo*/
+.senha-login{
+    position: relative;
+    top: 18px;
+}
+
+/*Estilizando o campo para preencher do gmail*/
+.login input[type=email]{
+    height: 20px;
+    width: 170px;
+}
+
+/*Estilizando o campo para preencher da senha*/
+.senha-login input[type=password]{
+    height: 20px;
+    width: 120px;
+}
+
+/*Estilizando o link do esqueceu a sua senha*/
+.senha-login a{
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/*Estilizando o botão de enviar*/
+.form-login input[type=submit]{
+    font-size: 15px;
+    background-color: #215ab2;
+    border: 1px solid #154388f3;
+    color: white;
+    cursor: pointer;
+}
+
+/*Efeito houver no botão*/
+.form-login input[type=submit]:hover{
+    background-color: #154388f3;
+}
+/*Fim da estilização do header*/
+
+/*Começo da estilização do main*/
+
+main{
+    height: 600px;
+    padding: 50px 0;
+    background: linear-gradient(white, #dce8fa);
+}
+
+/*Ajeitando a minha imagem*/
+.imagem{
+    float: left;
+    width: 60%;
+    margin-top: 10px;
+}
+
+.imagem > img{
+    max-width: 100%;
+}
+
+/*Arrumando o meu fomulário de novas contas*/
+.abrir-conta{
+    width: 40%;
+    float: left;
+}
+
+/*Estilizando "Abrir conta"*/
+.abrir-conta > h2{
+    font-size: 40px;
+}
+
+/*Estilizando "É gratuito e sempre será"*/
+.abrir-conta > h3{
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+/*Estilizando todo o formulário*/
+form.criar-conta{
+    margin-top: 20px;
+}
+
+/*Estilizando os inputs*/
+form.criar-conta input{
+    width: 100%;
+}
+
+/*Estilizando os inputs de texto, email e senha*/
+form.criar-conta input[type=text],
+form.criar-conta input[type=email],
+form.criar-conta input[type=password]{
+    height: 40px;
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid #a5dcff;
+}
+
+/*Estilizando apenas "nome" e "sobrenome"*/
+.nome, .sobrenome{
+    width: 40%;
+    float: left;
+    padding: 10px 10px;
+}
+
+/*Estilizando apenas "email" e "senha"*/
+.email, .senha-nova{
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+}
+
+/*Estilizando "data de nascimento"*/
+.nascimento > h2{
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+/*Estilixando os selects*/
+
+form .nascimento select{
+    height: 30px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+/*
+form .nascimento select .nascimento-dia{
+    width: 30px;
+}
+
+form .nascimento select .nascimento-mes,
+form .nascimento select .nascimento-ano{
+    width: 1500px;
+}
+*/
+
+/*Estilizando o "Masculino" e o "Feminino"*/
+.sexo h2{
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+/*Estilizando o radio (os checkbox que só pode escolher 1)*/
+.sexo input[type=radio]{
+    width: auto;
+    display: inline-block;
+}
+
+/*Estilizando o botão de "Cadastrar-se*/
+form.criar-conta input[type=submit]{
+    height: 40px;
+    max-width: 200px;
+    font-size: 25px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(#67ae55, #578843);
+    display: block;
+}
+
+/*Estilizando o footer*/
+
+/*Estilizando as escolhas de lingua do site*/
+.linguas{
+    padding: 30px 0;
+    background: white;
+}
+
+/*Estilizando os links para mudar de lingua*/
+.linguas a{
+    margin: 0 10px;
+    font-size: 12px;
+    color: #365899;
+}
+
+/*Estilizando a linguagem que o site está atualmente*/
+.linguas a.selected-lingua{
+    color: #737373;
+}
+
+/*Estilizando a linha das linguas*/
+.linguas .center{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+
+/*Começando o responsivo*/
+@media screen and (max-width:780px){
+
+    *{
+        float: none;
+    }
+
+    /*Começo reader responsivo*/
+
+    /*logo responsivo*/
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Login responsivo*/
+    .form-login{
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Login responsivo*/
+    .form-login .senha-login{
+        display: block;
+    }
+
+    /*Botão "enviar" responsivo*/
+    .form-login input[type=submit]{
+        margin-top: 20px;
+    }
+    /*Fim reader responsivo*/
+
+    /*Main responsivo*/
+
+    /*Imagem responsiva*/
+    .imagem{
+        width: 100%;
+    }
+
+    /*Abrir conta responsiva*/
+    .abrir-conta{
+        width: 100%;
+    }
+}

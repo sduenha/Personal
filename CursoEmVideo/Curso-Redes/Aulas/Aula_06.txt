@@ -1,0 +1,22 @@
+<Tipos de Redes>
+
+-> Classificação por modelo computacional
+    Ponto a Ponto -> Não tem servidor bem definido(todos podem ser servidor ou cliente), não tem administrador
+    Cliente Servidor -> Tem o servidor bem definido, tem uma pessoa gerenciando, tem administrador
+
+-> Classificação por abrangência
+    Rede PAN -> Personal Area Network, redes de até 1 metro quadrado de alcance, curso alcance e não precisa de um equipamento intermediário 
+    Rede LAN -> Local Area Networks, até 100 metros, é uma rede local, é a rede dentro de um mesmo local (prédio)
+    Rede CAN -> Campus Area Network, até 1 quilometro, várias redes locais interligadas, é a rede interligada de diferentes locais (prédios)
+    Rede MAN -> Metropolitan Area Network, liga cidades e estados fisícamente, com tecnologia própria
+    Rede WAN -> Wide Area Network, pode chegar a qualquer lugar do mundo, liga países e continentes, precisa de tecnologia de terceiros
+
+==> Classificação por modelo computacional e por abrangência sempre andam juntas, uma rede é classificada com ambas
+
+-> Classificação por topologia
+    Por arranjo físico -> "Disposição de uma sala de aula"
+        Estrela -> Ponto central distribuindo para pontos periféricos
+        Barramento -> Rua principal e suas ramificações
+        Anel -> Sem ponto central, cada um conversa entre si formando um ciclo fechado
+    Por arranjo lógico -> "Forma de fazer a comunicação dentro da sala de aula"
+        Ethernet, Token ring
