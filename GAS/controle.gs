@@ -28,7 +28,7 @@ function cadastrar() {
     if (ultimaLinha == 2) {
         movimentacoes.getRange(ultimaLinha, 9).setFormula('=H2');
     } else {
-        movimentacoes.getRange(ultimaLinha, 9).setFormula('I'+ulti)
+        movimentacoes.getRange(ultimaLinha, 9).setFormula("I"+ultimaLinha-1+"+H"+ultimaLinha+"");
     }
 
     limpar();
