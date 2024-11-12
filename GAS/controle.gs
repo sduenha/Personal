@@ -3,6 +3,7 @@ var planilha = SpreadsheetApp.getActiveSpreadsheet();
 var cadastro = planilha.getSheetByName("Cadastro");
 var auxiliar = planilha.getSheetByName("Auxiliar");
 var movimentacoes = planilha.getSheetByName("Movimentações");
+var relatorio = planilha.getSheetByName("Relatório");
 
 function cadastrar() {
     var data = cadastro.getRange("C3:G3").getValue();
@@ -43,5 +44,5 @@ function limpar() {
 }
 
 function gerar() {
-    
+
 }
