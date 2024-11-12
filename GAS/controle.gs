@@ -2,6 +2,7 @@ var planilha = SpreadsheetApp.getActiveSpreadsheet();
 
 var cadastro = planilha.getSheetByName("Cadastro");
 var auxiliar = planilha.getSheetByName("Auxiliar");
+var movimentacoes = planilha.getSheetByName("Movimentações");
 
 function cadastrar() {
     var data = cadastro.getRange("C3:G3").getValue();
@@ -22,6 +23,10 @@ function cadastrar() {
         auxiliar.getRange(ultimaLinha, 8).setValue(valor);
     } else {
         auxiliar.getRange(ultimaLinha, 8).setValue(-valor);
+    }
+
+    if (ultimaLinha == 2) {
+
     }
 
     limpar();
