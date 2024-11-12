@@ -13,9 +13,9 @@ function cadastrar() {
     var ultimaLinha = auxiliar.getLastRow() + 1;
 
     auxiliar.getRange(ultimaLinha, 1).setValue(data);
-    auxiliar.getRange(ultimaLinha, 2).setFormula("=SPLIT(A"+ ultimaLina +"; '/')");
+    auxiliar.getRange(ultimaLinha, 2).setFormula('=SPLIT(A'+ ultimaLina +'; "/")');
     auxiliar.getRange(ultimaLinha, 5).setValue(tipo);
-    auxiliar.getRange(ultimaLinha, 6).setValue(categoria)
-    auxiliar.getRange(ultimaLinha, 6).setValue(descricao)
-    auxiliar.getRange(ultimaLinha, 6).setValue(valor)
+    auxiliar.getRange(ultimaLinha, 6).setValue(categoria);
+    auxiliar.getRange(ultimaLinha, 7).setValue(descricao);
+    auxiliar.getRange(ultimaLinha, 8).setValue(valor);
 }
