@@ -12,7 +12,7 @@ function myFunction() {
     FormApp
 
     // Para acessar emails
-    GmailApp
+    MailApp
 
     // Para acessar slides
     SlidesApp
