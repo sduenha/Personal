@@ -17,7 +17,12 @@ function cadastrar() {
     auxiliar.getRange(ultimaLinha, 5).setValue(tipo);
     auxiliar.getRange(ultimaLinha, 6).setValue(categoria);
     auxiliar.getRange(ultimaLinha, 7).setValue(descricao);
-    auxiliar.getRange(ultimaLinha, 8).setValue(valor);
+
+    if (tipo == "Entrada") {
+        auxiliar.getRange(ultimaLinha, 8).setValue(valor);
+    } else {
+        auxiliar.getRange(ultimaLinha, 8).setValue(-valor);
+    }
 
     limpar();
 }
