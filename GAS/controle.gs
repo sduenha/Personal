@@ -18,4 +18,14 @@ function cadastrar() {
     auxiliar.getRange(ultimaLinha, 6).setValue(categoria);
     auxiliar.getRange(ultimaLinha, 7).setValue(descricao);
     auxiliar.getRange(ultimaLinha, 8).setValue(valor);
+
+    limpar();
+}
+
+function limpar() {
+    cadastro.getRange("C3:G3").clearContent();
+    cadastro.getRange("C5").clearContent();
+    cadastro.getrange("F5:G5").clearContent();
+    cadastro.getRange("C7:G7").clearContent();
+    cadastro.getRange("C9:G9").clearContent();
 }
