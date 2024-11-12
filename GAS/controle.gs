@@ -41,3 +41,7 @@ function limpar() {
     cadastro.getRange("C7:G7").clearContent();
     cadastro.getRange("C9:G9").clearContent();
 }
+
+function gerar() {
+    
+}
