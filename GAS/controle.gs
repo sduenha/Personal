@@ -9,7 +9,7 @@ function cadastrar() {
     var descricao = cadastro.getRange("C7:G7").getValue();
     var valor = cadastro.getRange("C9:G9").getValue();
 
-    var ultimalinha = auxiliar.getLastRow() + 1;
+    var ultimaLinha = auxiliar.getLastRow() + 1;
 
-    
+    auxiliar.getRange(ultimaLinha, 1).setValue(data);
 }
