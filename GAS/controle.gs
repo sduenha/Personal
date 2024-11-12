@@ -44,5 +44,7 @@ function limpar() {
 }
 
 function gerar() {
-
+    relatorio.getRange("F2:F").clearContent();
+    relatorio.getRange("F2").setFormula("E2");
+    
 }
