@@ -34,6 +34,12 @@ server.on('request', (req, res) => {
 });
 
 server.on('request', (req, res) => {
+    console.log(req.url)
+    if (req.url == '/') {
+        console.log('Main')
+    } else if (req.url == '/faltas') {
+        console.log('Request para faltas')
+    }
     console.log('Another request!');
 });
 
