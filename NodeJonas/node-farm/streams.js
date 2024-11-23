@@ -3,19 +3,11 @@ const server = require('http').createServer();
 
 server.on('request', (req, res) => {
     const readable = fs.createReadStream('test-file.txt');
-
-    readable.on('data', chunk => {
-        res.write(chunk);
-    });
-
-    readable.on('end', () => {
-        res.end();
-    });
-
+    readable.pipe(res);
     readable.on('error', err => {
         console.log(err);
         res.statusCode = 500;
-        res.end('File not found!');
+        res.end('File not found');
     });
 });
 
