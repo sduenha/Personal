@@ -10,10 +10,20 @@ const readFilePro = file => {
     });
 }
 
+const writeFilePro = (file, data) => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile(file, data, err => {
+            if (err) reject('Could not write file 😢');
+            
+            resolve('sucess');
+        });
+    });
+}
+
 readFilePro(`${__dirname}/dog.txt`).then(data => {
     console.log(`Breed: ${data}`);
 
-    superagent.get(`https://dog.ceo/api/breed/${data}/images/random`).then(res => {
+    return superagent.get(`https://dog.ceo/api/breed/${data}/images/random`).then(res => {
         console.log(res.body.message);
 
         fs.writeFile('dog-img.txt', res.body.message, err => {
