@@ -20,16 +20,19 @@ const writeFilePro = (file, data) => {
     });
 }
 
-readFilePro(`${__dirname}/dog.txt`).then(data => {
-    console.log(`Breed: ${data}`);
+readFilePro(`${__dirname}/dog.txt`)
+    .then(data => {
+        console.log(`Breed: ${data}`);
 
-    return superagent.get(`https://dog.ceo/api/breed/${data}/images/random`)
-}).then(res => {
+        return superagent.get(`https://dog.ceo/api/breed/${data}/images/random`)
+    })
+    .then(res => {
         console.log(res.body.message);
-
-        fs.writeFile('dog-img.txt', res.body.message, err => {
-            console.log('Random dog image saved to file!');
-        });
-    }).catch(err => {
+        return writeFilePro('dog-img.txt', res.body.message)
+    })
+    .then(() => {
+        console.log('Random dog image saved to file!');
+    })
+    .catch(err => {
         console.log(err.message);
     });
