@@ -10,9 +10,7 @@ const readFilePro = file => {
     });
 }
 
-readFilePro(`${__dirname}/dog.txt`);
-
-fs.readFile(`${__dirname}/dog.txt`, (err, data) => {
+readFilePro(`${__dirname}/dog.txt`).then(data => {
     console.log(`Breed: ${data}`);
 
     superagent.get(`https://dog.ceo/api/breed/${data}/images/random`).then(res => {
