@@ -23,7 +23,8 @@ const writeFilePro = (file, data) => {
 readFilePro(`${__dirname}/dog.txt`).then(data => {
     console.log(`Breed: ${data}`);
 
-    return superagent.get(`https://dog.ceo/api/breed/${data}/images/random`).then(res => {
+    return superagent.get(`https://dog.ceo/api/breed/${data}/images/random`)
+}).then(res => {
         console.log(res.body.message);
 
         fs.writeFile('dog-img.txt', res.body.message, err => {
@@ -32,4 +33,3 @@ readFilePro(`${__dirname}/dog.txt`).then(data => {
     }).catch(err => {
         console.log(err.message);
     });
-});
