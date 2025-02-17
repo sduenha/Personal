@@ -30,7 +30,7 @@ app.get('/api/v1/tours/:id', (req, res) => {
     }
 
     res.status(200).json({
-        status: 'sucess',
+        status: 'success',
         data: {
             tour
         }
@@ -53,7 +53,20 @@ app.post('/api/v1/tours', (req, res) => {
 });
 
 app.patch('/api/v1/tours/:id', (req, res) => {
-    
+
+    if (req.params.id * 1 > tours.length) {
+        res.status(404).json({
+            status: 'fail',
+            message: 'invalid ID'
+        })
+    }
+
+    res.status(200).json({
+        status: 'success',
+        data: {
+            tour: '<Updated tour here...>'
+        }
+    })
 })
 
 const port = 3000;
