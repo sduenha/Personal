@@ -84,7 +84,13 @@ const deleteTour = (req, res) => {
     })
 }
 
-app.route('/api/v1/tours').get(getAllTours).post(createTour)
+app.route('/api/v1/tours').get(getAllTours).post(createTour);
+
+app.use((req, res, next) => {
+    console.log('Hello from the middleware! 👋');
+    next();
+});
+
 app.route('/api/v1/tours/:id').get(getTour).patch(updateTour).delete(deleteTour);
 
 const port = 3000;
