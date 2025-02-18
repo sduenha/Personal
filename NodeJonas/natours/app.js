@@ -19,6 +19,7 @@ app.use((req, res, next) => {
 
 const tours = JSON.parse(fs.readFileSync(`${__dirname}/dev-data/data/tours-simple.json`));
 
+// 2) ROUTE HANDLERS
 const getAllTours = (req, res) => {
     console.log(req.requestTime);
     res.status(200).json({
@@ -98,6 +99,7 @@ const deleteTour = (req, res) => {
     })
 }
 
+// 3) ROUTES
 app.route('/api/v1/tours').get(getAllTours).post(createTour);
 app.route('/api/v1/tours/:id').get(getTour).patch(updateTour).delete(deleteTour);
 
