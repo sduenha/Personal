@@ -4,7 +4,7 @@ const morgan = require('morgan');
 
 const app = express();
 
-// 1) MIDDLEWERES
+// 1) MIDDLEWARES
 app.use(express.json());
 
 app.use((req, res, next) => {
@@ -103,6 +103,7 @@ const deleteTour = (req, res) => {
 app.route('/api/v1/tours').get(getAllTours).post(createTour);
 app.route('/api/v1/tours/:id').get(getTour).patch(updateTour).delete(deleteTour);
 
+// 4) START SERVER
 const port = 3000;
 app.listen(port, () => {
     console.log(`App running on port ${port}...`);
