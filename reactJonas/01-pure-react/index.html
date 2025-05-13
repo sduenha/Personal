@@ -6,12 +6,18 @@
     <title>Hello React!</title>
 </head>
 <body>
-
-
     <div id="root"></div>
 
-    <script src="https://unpkg.com/react@18/umd/react.developmente.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.developmente.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.developmente.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.developmente.js" crossorigin></script>
     
+    <script>
+        function App() {
+            return React.createElement('header', null, 'Hello React!');
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(React.createElement(App));
+    </script>
 </body>
 </html>
