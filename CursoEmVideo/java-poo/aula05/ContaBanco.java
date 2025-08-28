@@ -16,6 +16,7 @@ public class ContaBanco {
         System.out.println("Dono: " + this.getDono());
         System.out.println("Saldo: " + this.getSaldo());
         System.out.println("Status: " + (this.getStatus() ? "Aberta" : "Fechada"));
+        System.out.println("-------------------------------------------------------");
     }
 
     public void abrirConta(int n, String t, String d) {

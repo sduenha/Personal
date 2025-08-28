@@ -5,5 +5,8 @@ public class Aula {
 
         ContaBanco p2 = new ContaBanco();
         p2.abrirConta(0002, "CP", "Creuza");
+
+        p1.estadoAtual();
+        p2.estadoAtual();
     }
 }
