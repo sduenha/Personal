@@ -30,8 +30,11 @@ public class ContaBanco {
     }
 
     public void fecharConta() {
-        if (this.getSaldo() != 0) {
-            System.out.println("Zere o saldo antes de fechar a conta!");
+        if (this.getSaldo() > 0) {
+            System.out.println("A conta ainda tem dinheiro!");
+            return;
+        } else if (this.getSaldo() < 0) {
+            System.out.println("A conta esta em debito!");
             return;
         }
         this.setStatus(false);
@@ -68,43 +71,43 @@ public class ContaBanco {
         }
     }
 
-    int getnumConta() {
+    public int getnumConta() {
         return this.numConta;
     }
 
-    void setnumConta(int n) {
+    public void setnumConta(int n) {
         this.numConta = n;
     }
 
-    String getTipo() {
+    public String getTipo() {
         return this.tipo;
     }
 
-    void setTipo(String t) {
+    public void setTipo(String t) {
         this.tipo = t;
     }
 
-    String getDono() {
+    public String getDono() {
         return this.dono;
     }
 
-    void setDono(String d) {
+    public void setDono(String d) {
         this.dono = d;
     }
 
-    float getSaldo() {
+    public float getSaldo() {
         return this.saldo;
     }
 
-    void setSaldo(float s) {
+    public void setSaldo(float s) {
         this.saldo = s;
     }
 
-    boolean getStatus() {
+    public boolean getStatus() {
         return this.status;
     }
 
-    void setStatus(boolean s) {
+    public void setStatus(boolean s) {
         this.status = s;
     }
 }
