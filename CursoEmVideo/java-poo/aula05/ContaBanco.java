@@ -64,7 +64,7 @@ public class ContaBanco {
             return;
         }
 
-        if (this.getSaldo() > v) {
+        if (this.getSaldo() >= v) {
             this.setSaldo(this.getSaldo() - v);
             System.out.println("Saldo restante: " + this.getSaldo());
         } else {
