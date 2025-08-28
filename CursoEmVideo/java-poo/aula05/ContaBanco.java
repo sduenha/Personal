@@ -10,6 +10,14 @@ public class ContaBanco {
         this.setStatus(false);
     }
 
+    public void estadoAtual() {
+        System.out.println("Conta: " + this.getnumConta());
+        System.out.println("Tipo: " + this.getTipo());
+        System.out.println("Dono: " + this.getDono());
+        System.out.println("Saldo: " + this.getSaldo());
+        System.out.println("Status: " + this.getStatus());
+    }
+
     public void abrirConta(int n, String t, String d) {
 
         if (!t.equals("CC") && !t.equals("CP")) {
