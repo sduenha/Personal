@@ -15,7 +15,7 @@ public class ContaBanco {
         System.out.println("Tipo: " + this.getTipo());
         System.out.println("Dono: " + this.getDono());
         System.out.println("Saldo: " + this.getSaldo());
-        System.out.println("Status: " + this.getStatus());
+        System.out.println("Status: " + (this.getStatus() ? "Aberta" : "Fechada"));
     }
 
     public void abrirConta(int n, String t, String d) {
