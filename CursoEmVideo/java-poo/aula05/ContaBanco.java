@@ -6,8 +6,8 @@ public class ContaBanco {
     private Boolean status;
 
     public void ContaBanco() {
-        this.saldo = 0.0f;
-        this.status = false;
+        this.setSaldo(0);
+        this.setStatus(false);
     }
 
     public void abrirConta(int n, String t, String d) {
