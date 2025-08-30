@@ -1,6 +1,6 @@
 public class Aula {
     public static void main(String[] args) {
-        Lutador[] l = new Lutador[6];
+        Lutador l[] = new Lutador[6];
 
         l[0] = new Lutador(
             "Pretty Boy",
