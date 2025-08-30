@@ -67,7 +67,5 @@ public class Aula {
             2,
             4
         );
-
-        System.out.println(l)
     }
 }
