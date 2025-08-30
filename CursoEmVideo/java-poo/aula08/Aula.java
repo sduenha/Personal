@@ -67,5 +67,7 @@ public class Aula {
             2,
             4
         );
+
+        Luta UEC01 = new Luta();
     }
 }
