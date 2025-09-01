@@ -32,4 +32,8 @@ public class Pessoa {
     public void setSexo(String s) {
         this.sexo = s;
     }
+
+    public void fazAniv() {
+        this.setIdade(this.getIdade() + 1);
+    }
 }
