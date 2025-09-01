@@ -13,8 +13,6 @@ public class Aula {
         l[0].folhear(20);
         l[0].voltarPag();
         l[0].detalhes();
-        System.out.println(l[1].getTotPaginas());
-        System.out.println(l[1].getPagAtual());
         l[1].avancarPag();
         l[1].detalhes();
         l[2].voltarPag();
