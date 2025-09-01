@@ -23,4 +23,8 @@ public class Professor extends Pessoa {
     public void setSalario(float s) {
         this.salario = s;
     }
+
+    public void receberAumento(float a) {
+        this.setSalario(this.getSalario() + a);
+    }
 }
