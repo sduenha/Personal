@@ -6,6 +6,16 @@ public class Livro {
     private boolean aberto;
     private Pessoa leitor;
 
+    public Livro(
+        String t,
+        String a,
+        int tot,
+        int p,
+        Pessoa l
+    ) {
+        
+    }
+
     public String getTitulo() {
         return this.titulo;
     }
@@ -38,7 +48,21 @@ public class Livro {
         this.pagAtual = p;
     }
 
-    
+    public boolean isAberto() {
+        return this.aberto;
+    }
+
+    public void setAberto(boolean a) {
+        this.aberto = a;
+    }
+
+    public Pessoa getleitor() {
+        return this.leitor;
+    }
+
+    public void setLeitor(Pessoa l) {
+        this.leitor = l;
+    }
 
     public void detalhes() {
 
