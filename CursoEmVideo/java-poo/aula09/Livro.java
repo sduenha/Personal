@@ -85,8 +85,14 @@ public class Livro implements Publicacao {
     }
 
     @Override
-    public void folhear() {
+    public void folhear(int p) {
+        if (p > this.getTotPaginas()) {
+            System.out.println("O livro nao tem tanta paginas");
+        } else if (p <= 0) {
+            System.out.println("Forneca valores positivos");
+        }
 
+        
     }
 
     @Override
