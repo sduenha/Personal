@@ -22,4 +22,8 @@ public class Aluno extends Pessoa {
     public void setCurso(String c) {
         this.curso = c;
     }
+
+    public void cancelarMatricula() {
+        System.out.println("Sua matricula foi cancelada");
+    }
 }

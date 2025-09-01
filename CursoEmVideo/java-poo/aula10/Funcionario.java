@@ -23,4 +23,8 @@ public class Funcionario extends Pessoa {
     public void setTrabalhando(boolean t) {
         this.trabalhando = t;
     }
+
+    public void mudarTrabalho(boolean t) {
+        this.setTrabalhando(t);
+    }
 }
