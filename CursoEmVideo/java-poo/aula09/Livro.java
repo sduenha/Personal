@@ -69,9 +69,10 @@ public class Livro implements Publicacao {
     }
 
     public void detalhes() {
-        System.out.println("O livro " + this.getTitulo() + "foi escrito por " + this.getAutor());
+        System.out.println("======== DETALHES ========");
+        System.out.println("O livro " + this.getTitulo() + " foi escrito por " + this.getAutor());
         System.out.println("Ele tem um total de " + this.getTotPaginas() + " paginas");
-        System.out.println("Voce " + this.getLeitor().getNome() + "esta com o livro " + (this.isAberto() ? "aberto " : "fechado ") + "e esta na pagina " + this.getPagAtual());
+        System.out.println("Voce " + this.getLeitor().getNome() + " esta com o livro " + (this.isAberto() ? "aberto " : "fechado ") + "e esta na pagina " + this.getPagAtual() + "\n");
     }
 
     @Override
@@ -92,6 +93,7 @@ public class Livro implements Publicacao {
             System.out.println("Forneca valores positivos");
         }
 
+        this.setPagAtual(p);
         
     }
 
