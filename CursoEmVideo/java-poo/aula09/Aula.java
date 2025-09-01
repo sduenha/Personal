@@ -11,7 +11,10 @@ public class Aula {
         l[2] = new Livro("Java Avancado", "Maria Candido", 800, p[0]);
 
         l[0].folhear(20);
+        l[0].voltarPag();
         l[0].detalhes();
+        System.out.println(l[1].getTotPaginas());
+        System.out.println(l[1].getPagAtual());
         l[1].avancarPag();
         l[1].detalhes();
         l[2].voltarPag();

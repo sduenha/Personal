@@ -99,7 +99,7 @@ public class Livro implements Publicacao {
 
     @Override
     public void avancarPag() {
-        if (this.getPagAtual() == this.totPaginas) {
+        if (this.getPagAtual() < this.getTotPaginas()) {
             this.setPagAtual(this.getPagAtual() + 1);
         } else {
             System.out.println("Voce chegou ao final do livro!");
