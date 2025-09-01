@@ -14,6 +14,7 @@ public class Aula {
         l[0].detalhes();
         l[1].avancarPag();
         l[1].detalhes();
+        l[2].voltarPag();
         l[2].detalhes();
     }
 }

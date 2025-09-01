@@ -99,11 +99,19 @@ public class Livro implements Publicacao {
 
     @Override
     public void avancarPag() {
-        this.setPagAtual(this.getPagAtual() + 1);
+        if (this.getPagAtual() == this.totPaginas) {
+            this.setPagAtual(this.getPagAtual() + 1);
+        } else {
+            System.out.println("Voce chegou ao final do livro!");
+        }
     }
 
     @Override
     public void voltarPag() {
-        this.setPagAtual(this.getPagAtual() - 1);
+        if (this.pagAtual != 0) {
+            this.setPagAtual(this.getPagAtual() - 1);
+        } else {
+            System.out.println("Voce ja esta no comeco do livro");
+        }
     }
 }
