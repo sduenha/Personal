@@ -1,4 +1,4 @@
-public class Livro {
+public class Livro implements Publicacao {
     private String titulo;
     private String autor;
     private int totPaginas;
@@ -13,7 +13,12 @@ public class Livro {
         int p,
         Pessoa l
     ) {
-        
+        this.titulo = t;
+        this.autor = a;
+        this.totPaginas = tot;
+        this.pagAtual = p;
+        this.aberto = false;
+        this.leitor = l;
     }
 
     public String getTitulo() {
@@ -56,7 +61,7 @@ public class Livro {
         this.aberto = a;
     }
 
-    public Pessoa getleitor() {
+    public Pessoa getLeitor() {
         return this.leitor;
     }
 
@@ -65,6 +70,33 @@ public class Livro {
     }
 
     public void detalhes() {
+        System.out.println("O livro " + this.getTitulo() + "foi escrito por " + this.getAutor());
+        System.out.println("Ele tem um total de " + this.getTotPaginas() + " paginas");
+        System.out.println("Voce " + this.getLeitor().getNome() + "esta com o livro " + (this.isAberto() ? "aberto " : "fechado ") + "e esta na pagina " + this.getPagAtual());
+    }
 
+    @Override
+    public void abrir() {
+        this.aberto = true;
+    }
+
+    @Override
+    public void fechar() {
+        this.aberto = false;
+    }
+
+    @Override
+    public void folhear() {
+
+    }
+
+    @Override
+    public void avancarPag() {
+        this.setPagAtual(this.getPagAtual() + 1);
+    }
+
+    @Override
+    public void voltarPag() {
+        this.setPagAtual(this.getPagAtual() - 1);
     }
 }
