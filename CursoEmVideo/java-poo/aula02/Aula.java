@@ -9,5 +9,6 @@ public class Aula {
         c1.status();
         c1.tampar();
         c1.rabiscar("Rabisco");
+        c1.destampar();
     }
 } 
